@@ -1,0 +1,180 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color:  #F2F3F4;
+    background-image: url(guitar-border.svg);
+    background-position: right top;
+    background-repeat: repeat-y;
+    background-size: 250px auto;
+    background-position: calc(100% + 60px) top;  
+    padding-bottom: 10px;
+    background-origin: content-box;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.kep1 {
+    margin: 0 auto 25px auto;
+    max-width: 100%;
+    width: 755px;
+    border: 3px solid gray;
+    display: block;
+}
+
+.kep2 {
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+}
+
+.kep3 {
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+}
+
+.kep4 {
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    max-height: 380px;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header {
+    color: white;
+    padding: 2rem 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color:  #2b7a78;;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px  rgba(16,24,40,0.06);
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    background-color:  #145c5a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.jumb1 {
+    background-color:    #E8EAED !important;
+}
+
+.cont1 {
+    height: 285px;
+}
+
+.cont2 {
+    justify-content: center;
+}
+
+.cont3 {
+    background-color: #FAFAFA;
+}
+
+.cont4 {
+    background-color: #F8F7F7;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.5rem;
+        background-color: rgba(43, 122, 120, 0.1);
+        border-radius: 4px;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .cont1 {
+        height: auto;
+        min-height: 200px;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    .card {
+        padding: 0.8rem;
+    }
+}
