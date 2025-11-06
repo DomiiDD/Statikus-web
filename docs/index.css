@@ -1,0 +1,226 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color:  #F2F3F4;
+    background-image: url(guitar-border.svg);
+    background-position: right top;
+    background-repeat: repeat-y;
+    background-size: 250px auto;
+    background-position: calc(100% + 60px) top;  
+    padding-bottom: 10px;
+    background-origin: content-box;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.kep1 {
+    margin: 0 auto 25px auto;
+    max-width: 100%;
+    width: 755px;
+    border: 3px solid gray;
+    display: block;
+}
+
+.kep2 {
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+}
+
+.kep3 {
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+}
+
+.kep4 {
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    max-height: 380px;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header {
+    color: #145c5a;
+    padding: 2rem 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-light {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #145c5a !important;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    border-radius: 4px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #2b7a78 !important;
+    text-decoration: underline;
+    background-color: rgba(43, 122, 120, 0.1);
+}
+
+.navbar-light .navbar-nav .active .nav-link {
+    background-color: rgba(43, 122, 120, 0.15);
+    color: #145c5a !important;
+}
+
+.navbar-toggler {
+    border-color: #145c5a !important;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(20, 92, 90, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px  rgba(16,24,40,0.06);
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    background-color:  #145c5a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.jumb1 {
+    background-color:    #E8EAED !important;
+}
+
+.cont1 {
+    height: 285px;
+}
+
+.cont2 {
+    justify-content: center;
+}
+
+.cont3 {
+    background-color: #FAFAFA;
+}
+
+.cont4 {
+    background-color: #F8F7F7;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar-nav {
+        margin: 0 !important;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        padding: 0.8rem;
+        text-align: center;
+        background-color: rgba(43, 122, 120, 0.1);
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .cont1 {
+        height: auto;
+        min-height: 200px;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .kep1, .kep2, .kep3, .kep4 {
+        width: 90% !important;
+        margin: 1rem auto;
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .jumbotron {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    .card {
+        padding: 0.8rem;
+    }
+}
